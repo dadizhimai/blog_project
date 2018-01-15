@@ -1,0 +1,571 @@
+2017-09-21 09:26:01,859 [Thread-9:6128] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2017-09-21 09:26:01,959 [Thread-10:5968] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2017-09-21 09:26:01,982 [Thread-11:6416] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2017-09-21 09:26:02,471 [Thread-12:9084] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-21 09:26:18,755 [Thread-20:8580] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2017-09-21 09:26:18,783 [Thread-21:9768] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2017-09-21 09:26:18,801 [Thread-23:8356] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2017-09-21 09:31:37,313 [Thread-9:7500] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2017-09-21 09:31:37,328 [Thread-10:4512] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2017-09-21 09:31:37,336 [Thread-11:9536] [django.request:182] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2017-09-21 09:50:48,392 [Thread-2:4960] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loaders\base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 6: 'SITE_NAME'. Did you forget to register or load this tag?
+2017-09-21 09:51:40,934 [Thread-8:9876] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 204, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2017-09-21 09:51:42,697 [Thread-9:2716] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 204, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2017-09-21 09:51:43,216 [Thread-10:6308] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 204, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2017-09-21 09:51:44,154 [Thread-11:10972] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 204, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2017-09-21 09:51:44,698 [Thread-12:5740] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 204, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2017-09-21 09:51:45,249 [Thread-13:8424] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 204, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2017-09-21 10:34:33,582 [Thread-16:8072] [django.request:182] [base:get_response] [WARNING]- Not Found: /news.html
+2017-09-22 15:20:27,591 [Thread-2:848] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 505, in index
+    app_list = self.get_app_list(request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in get_app_list
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in <lambda>
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 109, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language zn-hans.
+2017-09-22 15:20:43,119 [Thread-14:9716] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 505, in index
+    app_list = self.get_app_list(request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in get_app_list
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in <lambda>
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 109, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language zn-hans.
+2017-09-22 15:28:44,528 [Thread-2:10620] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 505, in index
+    app_list = self.get_app_list(request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in get_app_list
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in <lambda>
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 109, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language cn-hans.
+2017-09-22 15:30:04,769 [Thread-2:10772] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 505, in index
+    app_list = self.get_app_list(request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in get_app_list
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in <lambda>
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 109, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language zh-cn.
+2017-09-22 15:30:06,552 [Thread-8:8600] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 505, in index
+    app_list = self.get_app_list(request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in get_app_list
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in <lambda>
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 109, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language zh-cn.
+2017-09-22 15:30:14,914 [Thread-13:456] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 505, in index
+    app_list = self.get_app_list(request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in get_app_list
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 491, in <lambda>
+    app_list = sorted(app_dict.values(), key=lambda x: x['name'].lower())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 109, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language zh-cn.
+2017-09-22 15:47:12,042 [Thread-2:1152] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\templatetags\static.py", line 103, in render
+    url = self.url(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\templatetags\staticfiles.py", line 16, in url
+    return static(path)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\templatetags\staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 204, in inner
+    self._setup()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\storage.py", line 394, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\storage.py", line 39, in __init__
+    *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\files\storage.py", line 185, in __init__
+    self.location = abspathu(self.base_location)
+  File "K:\python_virtualenv\blog_project_venv\lib\ntpath.py", line 490, in abspath
+    path = _getfullpathname(path)
+TypeError: coercing to Unicode: need string or buffer, tuple found
+2017-09-22 16:07:45,250 [Thread-5:7360] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "K:\python_virtualenv\blog_project\blog\views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\backends\django.py", line 95, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 206, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\template\base.py", line 959, in render_annotated
+    return self.render(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\templatetags\static.py", line 103, in render
+    url = self.url(context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\templatetags\staticfiles.py", line 16, in url
+    return static(path)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\templatetags\staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\functional.py", line 204, in inner
+    self._setup()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\storage.py", line 394, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\staticfiles\storage.py", line 39, in __init__
+    *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\files\storage.py", line 185, in __init__
+    self.location = abspathu(self.base_location)
+  File "K:\python_virtualenv\blog_project_venv\lib\ntpath.py", line 490, in abspath
+    path = _getfullpathname(path)
+TypeError: coercing to Unicode: need string or buffer, tuple found
+2017-09-22 16:11:57,631 [Thread-53:2760] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-22 16:11:57,772 [Thread-54:10460] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-22 16:52:11,700 [Thread-2:7452] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/ad/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 1392, in changeform_view
+    form = ModelForm(initial=initial)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\forms\models.py", line 291, in __init__
+    error_class, label_suffix, empty_permitted)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\forms\forms.py", line 84, in __init__
+    self.label_suffix = label_suffix if label_suffix is not None else _(':')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language zh-cn.
+2017-09-22 16:54:36,207 [Thread-2:7784] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/ad/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 1392, in changeform_view
+    form = ModelForm(initial=initial)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\forms\models.py", line 291, in __init__
+    error_class, label_suffix, empty_permitted)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\forms\forms.py", line 84, in __init__
+    self.label_suffix = label_suffix if label_suffix is not None else _(':')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\__init__.py", line 85, in ugettext
+    return _trans.ugettext(message)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 321, in ugettext
+    return do_translate(message, 'ugettext')
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 298, in do_translate
+    _default = _default or translation(settings.LANGUAGE_CODE)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 205, in translation
+    _translations[language] = DjangoTranslation(language)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\translation\trans_real.py", line 118, in __init__
+    raise IOError("No translation files found for default language %s." % settings.LANGUAGE_CODE)
+IOError: No translation files found for default language zh-CN.
+2017-09-22 17:23:51,670 [Thread-2:9772] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\core\handlers\base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\utils\decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 1367, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django-1.9.13-py2.7.egg\django\contrib\admin\options.py", line 642, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2017-09-22 17:28:46,710 [Thread-3:3204] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-23 08:49:51,177 [Thread-6:4540] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico

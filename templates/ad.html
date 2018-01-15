@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<div class="banner">
+          <div id="slide-holder">
+            <div id="slide-runner">
+                 {% for i in ad %}
+                    <a href="/" target="_blank"><img id="slide-img-1" src='/uploads/{{ i.image_url }} 'width="670" height="246 alt="" /></a>
+                 {% endfor %}
+              <div id="slide-controls">
+                <p id="slide-client" class="text"><strong></strong><span></span></p>
+                <p id="slide-desc" class="text"></p>
+                <p id="slide-nav"></p>
+              </div>
+
+            </div>
+                  <script>
+            if(!window.slider) {
+            var slider={};
+          }
+            {% for i in ad %}
+          slider.data= [
+            {
+                "id":"slide-img-1", // 与slide-runner中的img标签id对应
+                "client":"{{ i.title }}",
+                "desc":"{{ i.decription | safe }}" ,//这里修改描述
+            },
+          ];
+        {% endfor %}
+            </script>
+
+          </div>
+
+
+
+    </div>
+    <!-- banner代码 结束 -->

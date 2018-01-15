@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content_css %}
+
+{% endblock %}
+{% block content_js %}
+{% endblock %}
+{% block content_left %}
+    {% include 'ad.html' %}
+    <div class="topnews">
+      <h2>文章归档</h2>
+      <div class="blogs">
+          {% for foo in article_list %}
+
+        <ul>
+          <h3><a href="/blog/article/{{ foo.id }}">{{ foo.title }}</a></h3>
+          <p>{{ foo.desc |safe }}</p>
+          <p class="autor">
+              <span class="lm f_l">{% for tag in foo.tag.all %}<a href="/">{{ tag.name}}</a>&nbsp;{% endfor %}</span>
+              <span class="dtime f_l">{{ foo.date_publish |date:'Y-m-d' }}</span>
+              <span class="viewnum f_r">浏览（<a href="/">{{ foo.click_count }}</a>）</span>
+              <span class="pingl f_r">评论（<a href="/">{{ foo.comment_set.all.count }}</a>）</span>
+          </p>
+        </ul>
+          {% endfor %}
+      </div>
+
+    </div>
+  {% include 'pagination.html' %}
+{% endblock %}
